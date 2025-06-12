@@ -33,15 +33,15 @@ def extract_features(pwd):
 # --- Rule-based password validation ---
 def validate_with_rules(password, common_passwords):
     if not re.match(r'^[a-z]', password):
-        return "❌ Must start with a lowercase letter."
+        return "Must start with a lowercase letter."
     if not any(c.isupper() for c in password):
-        return "❌ Must include at least one uppercase letter."
+        return " Must include at least one uppercase letter."
     if not re.search(r'\d', password):
-        return "❌ Must include at least one digit."
+        return " Must include at least one digit."
     if not re.search(r'[!@#$%^&*]', password):
-        return "❌ Must include at least one special character (!@#$%^&*)."
+        return " Must include at least one special character (!@#$%^&*)."
     if password.lower() in common_passwords:
-        return "❌ Password is too common (used in dataset)."
+        return " Password is too common (used in dataset)."
     
     return "✅ Passed all basic checks!"
 
@@ -83,7 +83,7 @@ def main():
 
         # Rule-based check
         rule_result = validate_with_rules(password, common_passwords)
-        st.subheader("🧪 Rule Check Result")
+        st.subheader(" Rule Check Result")
         st.write(rule_result)
 
         if "✅" in rule_result:
