@@ -6,12 +6,15 @@ Key Features:
 -  Entropy estimation and crack time calculation
 -  Trained on a custom password dataset with labeled strength levels
 -  Streamlit web app for real-time password analysis
+
+  
  Tech Stack
 - Python
 - Scikit-learn
 - Pandas / NumPy
 - Streamlit
 - Joblib
+  
 How to Run
 ```bash
 # Clone the repository
