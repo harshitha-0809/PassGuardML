@@ -25,6 +25,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
   Project structure
+ ```
 passguard-ml/
 ├── app.py                      # Streamlit frontend
 ├── model_training.ipynb        # Notebook for training the ML model
@@ -33,6 +34,7 @@ passguard-ml/
 ├── label_encoder.joblib        # Label encoder for predictions
 ├── requirements.txt
 └── README.md
+```
  How It Works
 - Extracts features like length, digit count, case mix, special chars, and entropy.
 - Passes them into a trained logistic regression model.
