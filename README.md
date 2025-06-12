@@ -40,7 +40,8 @@ passguard-ml/
 - Passes them into a trained logistic regression model.
 - Displays the prediction (Weak / Medium / Strong) along with confidence.
 - Calculates estimated time to crack using entropy (online/offline attack).
-Future Improvements
-- Add keyboard pattern detection.
-- Use stronger ML models like XGBoost or RandomForest
-- Deploy online using Streamlit Cloud
+  
+  Future Improvements
+   Add keyboard pattern detection.
+   Use stronger ML models like XGBoost or RandomForest
+   Deploy online using Streamlit Cloud
